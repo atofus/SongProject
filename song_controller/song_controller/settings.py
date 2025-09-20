@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'api.apps.ApiConfig', # the API app we created (api folder) to our project (apps.py in API file)
-    'rest_framework' # added this as well.
+    'rest_framework', # added this as well.
+    'frontend.apps.FrontendConfig'
 ]
 
 MIDDLEWARE = [

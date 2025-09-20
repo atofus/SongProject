@@ -19,7 +19,8 @@ from django.urls import path, include # added include function.
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('api.urls')) # If we get the url api/, we'll just send it over to api.urls (api/urls.py folder)
+    path('api/', include('api.urls')), # If we get the url api/, we'll just send it over to api.urls (api/urls.py folder)
+    path('', include('frontend.urls'))
 ]
 
 """
