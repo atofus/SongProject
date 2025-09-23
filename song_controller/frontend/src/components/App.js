@@ -1,8 +1,17 @@
 import React from "react"
 import { createRoot } from "react-dom/client"
+import Homepage from "./Homepage";
 
-export default function App() {
-    return <h1>Testing React Component</h1> //we could render this componenet inside that index.html inside templates/frontend/index.html
+
+export default function App(props) {
+    //we could render this componenet inside that index.html inside templates/frontend/index.html
+    return (
+        <div>
+            <Homepage /> 
+            {/* <RoomJoinPage />
+            <CreateRoomPage /> */}
+        </div>
+    );
 }
 
 const appDiv = document.getElementById("app");
